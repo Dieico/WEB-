@@ -1,1 +1,1 @@
-trabalho
+trabalho em equipe
