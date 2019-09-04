@@ -20,24 +20,119 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="register.html">Cadastro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sacola.html">Sacola de Compras</a>
-          </li>
+  <!-- CADASTRO -->
+  <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Cadastro</h4>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+      <div class="modal-body mx-3">
+
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix grey-text"></i>
+          <input type="text" id="orangeForm-name" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-name">Seu nome</label>
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <input type="email" id="orangeForm-email" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-email">Seu email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Sua senha</label>
+        </div>
+
+        <div class="md-form mb">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <input type="password" id="orangeForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Repita a senha</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-primary">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- <div class="text-center">
+    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Launch
+      Modal Register Form</a>
+    </div> -->
+
+    <!-- LOGIN -->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Login</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Seu email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Sua senha</label>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="text-center">
+    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Launch
+    Modal Login Form</a>
+  </div>
+-->
+
+
+
+
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="" data-toggle="modal" data-target="#modalRegisterForm">Cadastro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sacola.html">Sacola de Compras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="perfil.html">Perfil</a>
+        </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Portfolio
@@ -115,6 +210,70 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">DigiOVo Tipo</h4>
+          <img class="card-img-top" src="http://placehold.it/700x450" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Detalhes Resumido</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">DigiOVo Tipo</h4>
+          <img class="card-img-top" src="http://placehold.it/700x450" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Detalhes Resumido</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">DigiOVo Tipo</h4>
+          <img class="card-img-top" src="http://placehold.it/700x450" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Detalhes Resumido</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">DigiOVo Tipo</h4>
+          <img class="card-img-top" src="http://placehold.it/700x450" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Detalhes Resumido</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">DigiOVo Tipo</h4>
+          <img class="card-img-top" src="http://placehold.it/700x450" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Detalhes Resumido</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- /.row -->
 
