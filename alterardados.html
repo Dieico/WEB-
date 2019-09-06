@@ -24,8 +24,9 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -77,8 +78,8 @@
       <div class="col-lg-3 mb-4">
         <h5 class="card-header">Opções</h5>
         <div class="list-group">
-          <a href="comprasrealizadas.html" class="list-group-item">Últimas Compras</a>
           <a href="perfil.html" class="list-group-item">Visualisar dados</a>
+          <a href="comprasrealizadas.html" class="list-group-item">Últimas Compras</a>
           <a href="alterardados.html" class="list-group-item">Editar dados pessoais</a>
           <a href="deletarconta.html" class="list-group-item">Deletar Conta</a>
         </div>
@@ -97,13 +98,41 @@
       </ul>-->
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="exampleInputEmail1">Nome</label>
+            <input type="text" class="form-control" id="exampleInputNome1" aria-describedby="nomehelp"
+              placeholder="Nome">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email Virtual</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Email Virtual">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="exampleInputEmail1">Endereço</label>
+            <input type="text" class="form-control" id="exampleInputEndereco1" aria-describedby="emailHelp"
+              placeholder="Endereço">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Senha Atual</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha Atual">
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-label-group">
+                  <label for="exampleInputPassword1">Nova Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Nova Senha">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-label-group">
+                  <label for="exampleInputPassword1">Confirmar Nova Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Confirmar Nova Senha">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">

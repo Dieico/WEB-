@@ -24,7 +24,9 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -35,7 +37,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="register.html">Cadastro</a>
-          </li>        
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="sacola.html">Sacola de Compras</a>
           </li>
@@ -44,159 +46,150 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="admin.html">Administração</a>
-          </li>          
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-<!-- Page Content -->
-<div class="container">
+  <!-- Page Content -->
+  <div class="container">
 
-  <!-- Page Heading/Breadcrumbs -->
-  <h1 class="mt-4 mb-3">Administrador
-    <!-- <small>O Seu pequeno aqui</small> -->
-  </h1>
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Administrador
+      <!-- <small>O Seu pequeno aqui</small> -->
+    </h1>
 
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="index.html">Home</a>
-    </li>
-    <li class="breadcrumb-item active">Perfil</li>
-  </ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Perfil</li>
+    </ol>
 
-  <!-- Content Row -->
-  <div class="row">
+    <!-- Content Row -->
+    <div class="row">
 
-    <!-- Sidebar Column -->
-    <div class="col-lg-3 mb-4">
-      <h5 class="card-header">Dados pessoais</h5>
-      <div class="list-group">
-        <a href="admin.html" class="list-group-item">Visualisar dados</a>
-      </div>
-      <div class="list-group">
-        <h5 class="card-header">Opções</h5>
+      <!-- Sidebar Column -->
+      <div class="col-lg-3 mb-4">
+        <h5 class="card-header">Dados pessoais</h5>
         <div class="list-group">
-          <a href="admincompras.html" class="list-group-item">Compras dos Clientes</a>                    
-          <a href="admincategorias.html" class="list-group-item">Gerenciar categorias</a>
-          <a href="adminProdutos.html" class="list-group-item">Gerenciar Produtos</a>
-          <a href="arrecada.html" class="list-group-item">Arrecadação</a>
+          <a href="admin.html" class="list-group-item">Visualisar dados</a>
         </div>
+        <div class="list-group">
+          <h5 class="card-header">Opções</h5>
+          <div class="list-group">
+            <a href="admincompras.html" class="list-group-item">Compras dos Clientes</a>
+            <a href="arrecada.html" class="list-group-item">Arrecadação</a>
+          </div>
+        </div>
+        <div class="list-group">
+          <h5 class="card-header">Categoria</h5>
+          <div class="list-group">
+            <a href="admincategorias.html" class="list-group-item">Gerenciar categorias</a>
+          </div>
+        </div>
+        <div class="list-group">
+          <h5 class="card-header">Produto</h5>
+          <div class="list-group">
+            <a href="adminProdutos.html" class="list-group-item">Gerenciar Produtos</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4">
+        <h2>Compras dos Clientes</h2>
+        <!-- Search form -->
+        <div class="col-lg-9 mb-4">
+          <form class="form-inline">
+            <input class="col-lg-10 form-control mr-sm-0" type="search" placeholder="Procurar Categoria"
+              aria-label="Search">
+            <button class="col-lg-2 btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+          </form>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-lg-9 mb-4"> -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Categoria</th>
+              <th scope="col">Descricao</th>
+              <th scope="col">Renomear</th>
+              <th scope="col">Retirar</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Nome da Categoria</th>
+              <td>Lorem Ypsilon</td>
+              <td>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Novo Nome" aria-label="Recipient's username"
+                  aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Okay</button>
+                  </div>
+                </div>
+              </td>
+              <td><button type="button" class="btn btn-dark">Retirar</button></td>
+            </tr>
+            <tr>
+                <td>Nome da Categoria</th>
+                <td>Lorem Ypsilon</td>
+                <td>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Novo Nome" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Okay</button>
+                    </div>
+                  </div>
+                </td>
+                <td><button type="button" class="btn btn-dark">Retirar</button></td>
+              </tr>
+          </tbody>
+        </table>
+
       </div>
     </div>
+    <!-- /.row -->
 
-    <!-- Content ColumnOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
-    <div class="col-lg-9 mb-4">
-      <h2>Categorias</h2>
-      <div class="row">
-
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x400" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Nome da categoria</p>
-              <a href="#" class="card-link">Editar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x400" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Nome da categoria</p>
-              <a href="#" class="card-link">Editar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x400" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Nome da categoria</p>
-              <a href="#" class="card-link">Editar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x400" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Nome da categoria</p>
-              <a href="#" class="card-link">Editar</a>
-            </div>
-          </div>
-        </div>
-
+    <!-- <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+        keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
       </div>
-
-      <div class="row">
-
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x400" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Nome da categoria</p>
-              <a href="#" class="card-link">Editar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x400" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Nome da categoria</p>
-              <a href="#" class="card-link">Editar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x400" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Nome da categoria</p>
-              <a href="#" class="card-link">Editar</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x400" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Nome da categoria</p>
-              <a href="#" class="card-link">Editar</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-
+    </div> -->
 
   </div>
   <!-- /.row -->
 
-</div>
-<!-- /.container -->
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
   </div>
   <!-- /.container -->
-</footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

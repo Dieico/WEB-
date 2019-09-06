@@ -22,11 +22,13 @@
 
 <body class="bg-dark">
 
-<!-- Navigation -->
+  <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -37,7 +39,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="register.html">Cadastro</a>
-          </li>        
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="sacola.html">Sacola de Compras</a>
           </li>
@@ -46,39 +48,44 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="admin.html">Administração</a>
-          </li>          
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-  
+
 
   <div class="container">
     <div class="card card-register mx-auto mt-5">
-      <div class="card-header">Criar conta</div>
+      <div class="card-header">Cadastrar</div>
       <div class="card-body">
         <form>
           <div class="form-group">
-            <div class="form-row">
-              <div class="col-md-6">
-                <div class="form-label-group">
-                  <input type="text" id="firstName" class="form-control" placeholder="Primeiro nome" required="required" autofocus="autofocus">
-                  <label for="firstName">Primeiro nome</label>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-label-group">
-                  <input type="text" id="lastName" class="form-control" placeholder="Last name" required="required">
-                  <label for="lastName">Last name</label>
-                </div>
-              </div>
+            <div class="form-label-group">
+              <input type="text" id="firstName" class="form-control" placeholder="Nome" required="required"
+                autofocus="autofocus">
+              <label for="firstName">Nome</label>
             </div>
           </div>
 
           <div class="form-group">
             <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required">
-              <label for="inputEmail">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email Virtual" required="required">
+              <label for="inputEmail">Email Virtual</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="text" id="inputEndereco" class="form-control" placeholder="Endereço" required="required">
+              <label for="inputEndereco">Endereço</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="text" id="inputLogin" class="form-control" placeholder="Login" required="required">
+              <label for="inputLogin">Login</label>
             </div>
           </div>
 
@@ -86,14 +93,16 @@
             <div class="form-row">
               <div class="col-md-6">
                 <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-                  <label for="inputPassword">Password</label>
+                  <input type="password" id="inputSenha" class="form-control" placeholder="Senha"
+                    required="required">
+                  <label for="inputSenha">Senha</label>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-label-group">
-                  <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm password" required="required">
-                  <label for="confirmPassword">Confirm password</label>
+                  <input type="password" id="confirmarSenha" class="form-control" placeholder="Confirme Senha"
+                    required="required">
+                  <label for="confirmarSenha">Confirme Senha</label>
                 </div>
               </div>
             </div>
