@@ -20,73 +20,69 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="register.html">Cadastro</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Logout</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sacola.html">Sacola de Compras</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Portfolio
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-        <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-        <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-        <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-        <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-        <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-      </div>
-    </li> -->
-        </ul>
+ <!-- Navigation -->
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Cadastro</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="sacola.html">Sacola de Compras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="perfil.html">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin.html">Administração</a>
+        </li>          
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Page Heading/Breadcrumbs -->
+  <h1 class="mt-4 mb-3">Perfil
+    <!-- <small>O Seu pequeno aqui</small> -->
+  </h1>
+
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="index.html">Home</a>
+    </li>
+    <li class="breadcrumb-item active">Perfil</li>
+  </ol>
+
+  <!-- Content Row -->
+  <div class="row">
+
+    <!-- Sidebar Column -->
+    <div class="col-lg-3 mb-4">
+      <h5 class="card-header">Opções</h5>
+      <div class="list-group">
+        <a href="comprasrealizadas.html" class="list-group-item">Últimas Compras</a>
+        <a href="perfil.html" class="list-group-item">Visualisar dados</a>
+        <a href="alterardados.html" class="list-group-item">Editar dados pessoais</a>
+        <a href="deletarconta.html" class="list-group-item">Deletar Conta</a>
       </div>
     </div>
-  </nav>
-  <!-- Page Content -->
-  <div class="container">
 
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Perfil
-      <!-- <small>O Seu pequeno aqui</small> -->
-    </h1>
-
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="breadcrumb-item active">Perfil</li>
-    </ol>
-
-    <!-- Content Row -->
-    <div class="row">
-
-      <!-- Sidebar Column -->
-      <div class="col-lg-3 mb-4">
-        <h5 class="card-header">Opções</h5>
-        <div class="list-group">
-          <a href="comprasrealizadas.html" class="list-group-item">Últimas Compras</a>
-          <a href="perfil.html" class="list-group-item">Visualisar dados</a>
-          <a href="alterardados.html" class="list-group-item">Editar dados pessoais</a>
-        </div>
-      </div>
-
-      <!-- Content Column -->
-      <div class="col-lg-9 mb-4">
-        <h2>Informações do Usuário</h2>
-        <ul class="list-group list-group-flush">
+    <!-- Content Column -->
+    <div class="col-lg-9 mb-4">
+      <h2>Informações do Usuário</h2>
+      <ul class="list-group list-group-flush">
         <li class="list-group-item">Nome <b>Leonardo Moreira</b></li>
         <li class="list-group-item">Login <b>Login</b></li>
         <li class="list-group-item">Senha <b>Senha</b></li>
@@ -94,25 +90,25 @@
         <li class="list-group-item">Endereço <b>endereço</b></li>
       </ul>
 
-      </div>
-
     </div>
-    <!-- /.row -->
 
   </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+  </div>
   <!-- /.container -->
+</footer>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
