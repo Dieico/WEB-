@@ -20,101 +20,119 @@
 
 <body>
 
- <!-- Navigation -->
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Vila dos Digiovo</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
 
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="register.html">Cadastro</a>
-        </li>        
-        <li class="nav-item">
-          <a class="nav-link" href="sacola.html">Sacola de Compras</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="perfil.html">Perfil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="admin.html">Administração</a>
-        </li>          
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Page Content -->
-<div class="container">
-
-  <!-- Page Heading/Breadcrumbs -->
-  <h1 class="mt-4 mb-3">Administrador
-    <!-- <small>O Seu pequeno aqui</small> -->
-  </h1>
-
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item">
-      <a href="index.html">Home</a>
-    </li>
-    <li class="breadcrumb-item active">Administrador</li>
-  </ol>
-
-  <!-- Content Row -->
-  <div class="row">
-
-    <!-- Sidebar Column -->
-    <div class="col-lg-3 mb-4">
-      <h5 class="card-header">Dados pessoais</h5>
-      <div class="list-group">
-        <a href="admin.html" class="list-group-item">Visualisar dados</a>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sacola.html">Sacola de Compras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perfil.html">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Administração</a>
+          </li>
+        </ul>
       </div>
-      <div class="list-group">
-        <h5 class="card-header">Opções</h5>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Administrador
+      <!-- <small>O Seu pequeno aqui</small> -->
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Administrador</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+
+      <!-- Sidebar Column -->
+      <div class="col-lg-3 mb-4">
+        <h5 class="card-header">Dados pessoais</h5>
         <div class="list-group">
-          <a href="admincompras.html" class="list-group-item">Compras dos Clientes</a>                    
-          <a href="admincategorias.html" class="list-group-item">Gerenciar categorias</a>
-          <a href="adminProdutos.html" class="list-group-item">Gerenciar Produtos</a>
-          <a href="arrecada.html" class="list-group-item">Arrecadação</a>
+          <a href="admin.html" class="list-group-item">Visualisar Meus Dados</a>
+          <a href="admindados.html" class="list-group-item">Alterar Meus Dados</a>
+          <a href="dadosdocliente.html" class="list-group-item">Dados dos Clientes</a>
+        </div>
+        <div class="list-group">
+          <h5 class="card-header">Opções de Vendas</h5>
+          <div class="list-group">
+            <a href="admincompras.html" class="list-group-item">Compras dos Clientes</a>
+            <a href="comprasporcliente.html" class="list-group-item">Compras por Cliente</a>
+            <a href="arrecada.html" class="list-group-item">Arrecadação por Dia</a>
+          </div>
+        </div>
+        <div class="list-group">
+          <h5 class="card-header">Categoria</h5>
+          <div class="list-group">
+            <a href="adicionarcategorias.html" class="list-group-item">Adicionar categorias</a>
+            <a href="admincategorias.html" class="list-group-item">Gerenciar categorias</a>
+          </div>
+        </div>
+        <div class="list-group">
+          <h5 class="card-header">Produto</h5>
+          <div class="list-group">
+            <a href="adicionarProdutos.html" class="list-group-item">Adicionar Produtos</a>
+            <a href="adminProdutos.html" class="list-group-item">Gerenciar Produtos</a>
+            <a href="adminEsgotados.html" class="list-group-item">Produtos Esgotados</a>
+          </div>
         </div>
       </div>
+
+      <!-- Content Column -->
+      <div class="col-lg-9 mb-4">
+        <h2>Informações do Usuário</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Nome: <b>Leonardo Moreira</b></li>
+          <li class="list-group-item">Login: <b>leo</b></li>
+          <!-- <li class="list-group-item">Senha <b>Senha</b></li> -->
+          <li class="list-group-item">Email: <b>leomoreira@virtual.ufc.br</b></li>
+          <!-- <li class="list-group-item">Endereço <b>endereço</b></li> -->
+        </ul>
+
+      </div>
+
     </div>
+    <!-- /.row -->
 
-    <!-- Content Column -->
-    <div class="col-lg-9 mb-4">
-      <h2>Informações do Usuário</h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Nome <b>Leonardo Moreira</b></li>
-        <li class="list-group-item">Login <b>Login</b></li>
-        <!-- <li class="list-group-item">Senha <b>Senha</b></li> -->
-        <li class="list-group-item">Email cadastrado <b>Email</b></li>
-        <li class="list-group-item">Endereço <b>endereço</b></li>
-      </ul>
-
-    </div>
-
-  </div>
-  <!-- /.row -->
-
-</div>
-<!-- /.container -->
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
   </div>
   <!-- /.container -->
-</footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
