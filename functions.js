@@ -7,7 +7,7 @@
 //   return true;
 // }
 
-function (){
+function client(){
   var nome = document.getElementById(firstName).value;
   var senha = document.getElementById(firstName).value;
 }

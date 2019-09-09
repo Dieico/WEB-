@@ -86,12 +86,15 @@
         <div class="list-group">
           <h5 class="card-header">Categoria</h5>
           <div class="list-group">
+            <a href="adicionarcategorias.html" class="list-group-item">Adicionar categorias</a>
             <a href="admincategorias.html" class="list-group-item">Gerenciar categorias</a>
+            <!-- <a href="addcategoria.html" class="list-group-item">Gerenciar categorias</a> -->
           </div>
         </div>
         <div class="list-group">
           <h5 class="card-header">Produto</h5>
           <div class="list-group">
+            <a href="adicionarProdutos.html" class="list-group-item">Adicionar Produtos</a>
             <a href="adminProdutos.html" class="list-group-item">Gerenciar Produtos</a>
           </div>
         </div>
@@ -99,7 +102,7 @@
 
       <!-- Content Column -->
       <div class="col-lg-9 mb-4">
-        <h2>Compras dos Clientes</h2>
+        <h2>Categorias</h2>
         <!-- Search form -->
         <div class="col-lg-9 mb-4">
           <form class="form-inline">
@@ -115,40 +118,65 @@
             <tr>
               <th scope="col">Categoria</th>
               <th scope="col">Descricao</th>
-              <th scope="col">Renomear</th>
-              <th scope="col">Retirar</th>
+              <th scope="col">Alterar</th>
+              <th scope="col">Remover</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
               <td>Nome da Categoria</th>
-              <td>Lorem Ypsilon</td>
-              <td>
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Novo Nome" aria-label="Recipient's username"
-                  aria-describedby="basic-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button">Okay</button>
-                  </div>
+              <td>Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon
+                Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon Lorem Ypsilon</td>
+              <td><button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#collapseExample"
+                  aria-expanded="false" aria-controls="collapseExample">Alterar</button></td>
+              <td><button type="button" class="btn btn-dark">Remover</button></td>
+            </tr>
+            <tr class="collapse" id="collapseExample">
+              <td colspan="4">
+                <div class="card card-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Nome da Categoria</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Nome da Categoria">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Descrição da Categoria</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Descrição da Categoria"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Alterar Categoria</button>
+                  </form>
                 </div>
               </td>
-              <td><button type="button" class="btn btn-dark">Retirar</button></td>
             </tr>
             <tr>
-                <td>Nome da Categoria</th>
-                <td>Lorem Ypsilon</td>
-                <td>
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Novo Nome" aria-label="Recipient's username"
-                    aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button">Okay</button>
+              <td>Nome da Categoria</th>
+              <td>Lorem Ypsilon</td>
+              <td><button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#collapseExample2"
+                  aria-expanded="false" aria-controls="collapseExample2">Alterar</button></td>
+              <td><button type="button" class="btn btn-dark">Remover</button></td>
+            </tr>
+            <tr class="collapse" id="collapseExample2">
+              <td colspan="4">
+                <div class="card card-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Nome da Categoria</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Nome da Categoria">
                     </div>
-                  </div>
-                </td>
-                <td><button type="button" class="btn btn-dark">Retirar</button></td>
-              </tr>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Descrição da Categoria</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Descrição da Categoria"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Alterar Categoria</button>
+                  </form>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
 
